@@ -1,0 +1,31 @@
+.container div.alert {
+  /* color: gold; */
+  text-align: center;
+  font-weight: 600;
+}
+
+tbody tr td:first-child  {
+  font-style: italic;
+}
+
+tbody tr td:last-child  {
+  text-align: center;
+}
+
+/* const storedBooks = [
+      {
+        title: "The Hobbit",
+        author: "J. R. R. Tolkien",
+        isbn: "9780547928227"
+      },
+      {
+        title: "A Game Of Thrones",
+        author: "George R. R. Martin",
+        isbn: "9780553103540"
+      },
+      {
+        title: "The Hitchhiker's Guide To The Galaxy",
+        author: "Douglas Adams",
+        isbn: "9780345391803"
+      }
+    ]; */
