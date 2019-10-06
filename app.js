@@ -111,7 +111,7 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
   // validation
   if(title === '' || author === '' || isbn === '') {
     // show NOT VALIDATED alert
-    UI.showAlert('***Please complete all fields in order to add your book!***', 'danger');
+    UI.showAlert('***Please complete all fields in order to add your book***', 'danger');
   } else {
   // instantiate book
     const book = new Book(title, author, isbn);
@@ -123,7 +123,7 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
     Store.addBook(book);
 
     // show VALIDATED alert
-    UI.showAlert('***Book successfully added!***', 'success');  
+    UI.showAlert('Book successfully added!', 'success');  
 
     //clear fields
     UI.clearFields();
@@ -140,5 +140,5 @@ document.querySelector("#book-list").addEventListener("click", (e) => {
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 
   // show BOOK REMOVED SUCCESS alert
-  UI.showAlert('***Book successfully removed!***', 'warning');
+  UI.showAlert('Book successfully removed!', 'warning');
 });
